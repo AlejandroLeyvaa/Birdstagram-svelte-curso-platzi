@@ -1,0 +1,30 @@
+{
+  "name": "birdstagram-platzi-curso-svelte",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sapper dev",
+    "build": "sapper build",
+    "export": "sapper export",
+    "start": "node __sapper__/build"
+  },
+  "author": "Alejandro",
+  "license": "MIT",
+  "devDependencies": {
+    "dotenv-webpack": "^3.0.0",
+    "file-loader": "^6.1.0",
+    "sapper": "^0.28.9",
+    "svelte": "^3.25.0",
+    "svelte-loader": "^2.13.6",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "polka": "^0.5.2",
+    "sirv": "^1.0.6",
+    "unsplash-js": "^6.3.0"
+  }
+}
