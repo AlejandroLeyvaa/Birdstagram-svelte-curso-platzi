@@ -5,6 +5,7 @@ const pkg = require('./package.json');
 const Dotenv = require('dotenv-webpack');
 
 const mode = process.env.NODE_ENV;
+const accessKey = process.env.ACCESS_KEY;
 const dev = mode === 'development';
 
 const alias = { svelte: path.resolve('node_modules', 'svelte') };
@@ -27,18 +28,26 @@ module.exports = {
               hydratable: true,
               hotReload: false
             }
-          }
-        }
+          },
+        },
+        {
+          test: /\.(png|jpe?g|gif)$/i,
+          use: [
+            {
+              loader: 'file-loader',
+            },
+          ],
+        },
       ]
     },
     mode,
     plugins: [
       new Dotenv({
-        path: './.env',
+        path: './.env'
       }),
       new webpack.DefinePlugin({
         'process.browser': true,
-        'process.env.NODE_ENV': JSON.stringify(mode)
+        'process.env.NODE_ENV': JSON.stringify(mode),
       }),
     ].filter(Boolean),
     devtool: dev && 'inline-source-map'
@@ -48,7 +57,7 @@ module.exports = {
     output: config.server.output(),
     target: 'node',
     resolve: { alias, extensions, mainFields },
-    externals: Object.keys(pkd.dependencies).concat('encoding'),
+    externals: Object.keys(pkg.dependencies).concat('encoding'),
     module: {
       rules: [
         {
@@ -61,7 +70,15 @@ module.exports = {
               generate: 'ssr'
             }
           }
-        }
+        },
+        {
+          test: /\.(png|jpe?g|gif)$/i,
+          use: [
+            {
+              loader: 'file-loader',
+            },
+          ],
+        },
       ]
     },
     mode: process.env.NODE_ENV,

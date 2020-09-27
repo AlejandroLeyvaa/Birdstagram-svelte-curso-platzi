@@ -3,8 +3,8 @@
 
   export let results = [];
   export let userPosts = [];
-
 </script>
+
 <style>
   .TimeLine {
     width: 615px;

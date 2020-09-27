@@ -37,9 +37,9 @@
   <div class="Stories-content">
     <ul class="Stories-content-list">
       {#each results as result}
-      <Users {...result} />
+        <Users {...result} />
       {:else}
-      <p>Loading...</p>
+        <p>Loading...</p>
       {/each}
     </ul>
   </div>

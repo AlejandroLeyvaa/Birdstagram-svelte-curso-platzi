@@ -41,7 +41,7 @@
   <div class="Users-user-container">
     <div>
       <figure class="Users-user-box">
-        <img src={urls.raw} alt={alt_description}>
+        <img src={urls.raw} loading="lazy" alt={alt_description}>
       </figure>
       <h3 class="Users-user-name">{user.first_name}</h3>
     </div>

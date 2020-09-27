@@ -1,6 +1,8 @@
 <script>
-  import user from '../assets/images/user.png';
-  import { likeCount } from '../store/store';
+  import user from '../assets/statics/user.png';
+  import { likeCount } from '../store/store';[];
+
+
 </script>
 
 <style>
@@ -77,6 +79,8 @@
     margin: 0;
     padding: 0;
   }
+
+
 </style>
 
 <header class="Header">
@@ -97,7 +101,7 @@
           {$likeCount === 0 ? '' : $likeCount }
         <li>
           <figure class="Header-user-container">
-            <img src={user} alt="Alejandro Leyva">
+            <img src={user} alt='Alejandro Leyva' />
           </figure>
         </li>
       </ul>

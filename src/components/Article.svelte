@@ -3,7 +3,7 @@
 </script>
 
 <style>
-  .Main {
+  .Article {
     height: 100vh;
     width: 100vw;
     grid-area: Main;
@@ -14,6 +14,6 @@
   }
 </style>
 
-<main class="Main">
+<article class="Article">
   <slot />
-</main>
+</article>

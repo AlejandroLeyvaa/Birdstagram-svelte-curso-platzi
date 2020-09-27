@@ -78,7 +78,7 @@
     <div class="Card-header">
       <div class="Card-user-data">
         <figure>
-          <img class="Card-user-img" src={urls.small} alt={alt_description} sizes='600px' style='object-fit: cover;'/>
+          <img class="Card-user-img" loading="lazy" src={urls.small} alt={alt_description} sizes='600px' style='object-fit: cover;'/>
         </figure>
         <h2>{user.first_name}</h2>
       </div>

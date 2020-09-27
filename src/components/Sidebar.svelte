@@ -4,7 +4,9 @@
   import Footer from './Footer.svelte';
 
   export let user;
+  export let posts;
   export let results;
+
 </script>
 
 <style>
@@ -15,11 +17,17 @@
   .Sidebar-container {
     position: fixed;
   }
+
+  @media screen and (max-width: 800px) {
+    .Sidebar {
+      display: none;
+    }
+  }
 </style>
 
 <section class="Sidebar">
   <div class="Sidebar-container">
-    <Profile {...user} />
+    <Profile {...user} {posts} />
     <Suggestions {results} />
     <Footer />
   </div>

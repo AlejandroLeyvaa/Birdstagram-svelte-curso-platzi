@@ -1,6 +1,5 @@
 <script>
-  import user from '../assets/images/user.png';
-
+  import user from '../assets/statics/user.png';
   export let nickname;
   export let name;
 </script>
