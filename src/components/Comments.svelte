@@ -44,11 +44,12 @@
 
 <style>
   .Comments-list-icons {
-    padding: 0 20px;
+    padding: 16px 20px;
     display: flex;
     justify-content: space-between;
     list-style: none;
   }
+
 
   .far {
     margin: 0 .5rem;
@@ -60,13 +61,13 @@
   }
 
   .Comments-list-comments {
-    padding: 0 20px;
+    padding: 0 10px;
     list-style: none;
   }
 
   .Comments-comment-container {
     display: flex;
-    margin: 0 .5rem;
+    margin: .5rem .5rem;
     justify-content: space-between;
   }
 
