@@ -18,11 +18,36 @@
     position: fixed;
   }
 
+  @media screen and (max-width: 1200px) {
+    .Sidebar {
+      display: none;
+    }
+  }
+
   @media screen and (max-width: 800px) {
     .Sidebar {
       display: none;
     }
   }
+
+  @media screen and (max-width: 767px) {
+    .Sidebar {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .Sidebar {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .Sidebar {
+      display: none;
+    }
+  }
+
 </style>
 
 <section class="Sidebar">

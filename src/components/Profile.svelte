@@ -25,12 +25,20 @@
 
   .Profile-user-data {
     grid-area: Data;
-  }
-
-  .Profile-user-data {
     margin: 1rem;
   }
 
+  .Profile-user-data h2 {
+    color: #262626;
+    font-size: 12px;
+    grid-area: Data;
+    margin-bottom: .5rem;
+  }
+
+  .Profile-user-data h3 {
+    font-size: 12px;
+    margin-top: .5rem;
+  }
 
 </style>
 <div class="Profile">

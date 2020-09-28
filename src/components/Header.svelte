@@ -36,6 +36,7 @@
   }
 
   #header-input {
+    width: 200px;
     border: 1px solid #dbdbdb;
     border-radius: 3px;
     padding: 5px;
@@ -79,6 +80,195 @@
     margin: 0;
     padding: 0;
   }
+
+  @media screen and (max-width: 800px) {
+    .Header-content {
+      display: grid;
+      grid-template-columns:   33.3% 33.3% 33.3%;
+      grid-template-rows: 55px;
+      grid-template-areas: " Logo Search Icons";
+    }
+
+    .Header-logo {
+      grid-area: Logo;
+      margin: auto 1rem;
+    }
+
+    .Header-content-search {
+      grid-area: Search;
+      margin: auto;
+    }
+
+    .Header-content-icons {
+      display: flex;
+      margin: auto 0;
+      padding: .5rem 0;
+      list-style: none;
+      grid-area: Icons;
+      box-sizing: border-box;
+    }
+
+    .Header-content-icons i {
+      font-size: 1.5rem;
+      margin: .5rem .5rem;
+    }
+
+    .Header-user-container {
+      margin:  0 .5rem;
+      padding: .4rem 0 0 0 ;
+    }
+
+    .Header-user-container img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin: 0;
+      padding: 0;
+    }
+
+  }
+
+  @media screen and (max-width: 767px) {
+    .Header-content {
+      display: grid;
+      grid-template-columns:   33.3% 33.3% 33.3%;
+      grid-template-rows: 55px;
+      grid-template-areas: " Logo Search Icons";
+    }
+
+    .Header-logo {
+      grid-area: Logo;
+      margin: auto 1rem;
+    }
+
+    .Header-content-search {
+      grid-area: Search;
+      margin: auto;
+    }
+
+    .Header-content-icons {
+      display: flex;
+      margin: auto 0;
+      padding: .5rem 0;
+      list-style: none;
+      grid-area: Icons;
+      box-sizing: border-box;
+    }
+
+    .Header-content-icons i {
+      font-size: 1.5rem;
+      margin: .5rem .5rem;
+    }
+
+    .Header-user-container {
+      margin:  0 .5rem;
+      padding: .4rem 0 0 0 ;
+    }
+
+    .Header-user-container img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin: 0;
+      padding: 0;
+    }
+
+  }
+
+  @media screen and (max-width: 480px) {
+    .Header-content {
+      display: grid;
+      grid-template-columns:   33.3% 33.3% 33.3%;
+      grid-template-rows: 55px;
+      grid-template-areas: " Logo Search Icons";
+    }
+
+    .Header-logo {
+      grid-area: Logo;
+      margin: auto 1rem;
+    }
+
+    .Header-content-search {
+      grid-area: Search;
+      margin: auto;
+    }
+
+    .Header-content-icons {
+      display: flex;
+      margin: auto 0;
+      padding: .5rem 0;
+      list-style: none;
+      grid-area: Icons;
+      box-sizing: border-box;
+    }
+
+    .Header-content-icons i {
+      font-size: 1.5rem;
+      margin: .5rem .5rem;
+    }
+
+    .Header-user-container {
+      margin:  0 .5rem;
+      padding: .4rem 0 0 0 ;
+    }
+
+    .Header-user-container img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin: 0;
+      padding: 0;
+    }
+
+  }
+
+  @media screen and (max-width: 320px) {
+    .Header-content {
+      display: grid;
+      grid-template-columns:   33.3% 33.3% 33.3%;
+      grid-template-rows: 55px;
+      grid-template-areas: " Logo Search Icons";
+    }
+
+    .Header-logo {
+      grid-area: Logo;
+      margin: auto 1rem;
+    }
+
+    .Header-content-search {
+      grid-area: Search;
+      margin: auto;
+    }
+
+    .Header-content-icons {
+      display: flex;
+      margin: auto 0;
+      padding: .5rem 0;
+      list-style: none;
+      grid-area: Icons;
+      box-sizing: border-box;
+    }
+
+    .Header-content-icons i {
+      font-size: 1.5rem;
+      margin: .5rem .5rem;
+    }
+
+    .Header-user-container {
+      margin:  0 .5rem;
+      padding: .4rem 0 0 0 ;
+    }
+
+    .Header-user-container img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin: 0;
+      padding: 0;
+    }
+
+  }
+
 
 
 </style>

@@ -40,6 +40,7 @@
     .then(toJson)
     .then((json) => {
       unsplashRedBirds = json;
+      console.log(unsplashRedBirds);
     });
   });
 </script>
