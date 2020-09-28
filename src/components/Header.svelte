@@ -1,7 +1,13 @@
 <script>
   import user from '../assets/statics/user.png';
-  import { likeCount } from '../store/store';[];
+  import { likeCount } from '../store/store';
+  import { goto } from '@sapper/app';
+  export let segment;
 
+  const navigateHome = async () => {
+    await goto('/');
+
+  };
 
 </script>
 
@@ -28,6 +34,10 @@
   .Header-logo {
     margin: auto 0;
     grid-area: Logo;
+  }
+
+  .Header-logo h1:hover  {
+    cursor: pointer;
   }
 
   .Header-content-search {
@@ -58,7 +68,7 @@
 
   .Header-content-icons {
     display: flex;
-    padding: 0 80px;
+    padding: 1rem 0;
     list-style: none;
     grid-area: Icons;
   }
@@ -69,8 +79,19 @@
   }
 
   .Header-user-container {
-    margin: 0 1rem;
-    padding: 0;
+      margin:  0 .5rem;
+      padding: 0 0 1 0 ;
+  }
+
+  [aria-current] figure {
+    background-image: linear-gradient(#fff, #fff),
+      radial-gradient(circle at top left, #f09433, #bc1888);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border: double 2px transparent;
+    border-radius: 100%;
+    width: 36px;
+    height: 36px;
   }
 
   .Header-user-container img {
@@ -114,8 +135,11 @@
     }
 
     .Header-user-container {
-      margin:  0 .5rem;
-      padding: .4rem 0 0 0 ;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin: .5rem 0 0 0;
+      padding: 0;
     }
 
     .Header-user-container img {
@@ -127,6 +151,7 @@
     }
 
   }
+
 
   @media screen and (max-width: 767px) {
     .Header-content {
@@ -161,8 +186,11 @@
     }
 
     .Header-user-container {
-      margin:  0 .5rem;
-      padding: .4rem 0 0 0 ;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin: .5rem 0 0 0;
+      padding: 0;
     }
 
     .Header-user-container img {
@@ -208,8 +236,11 @@
     }
 
     .Header-user-container {
-      margin:  0 .5rem;
-      padding: .4rem 0 0 0 ;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin: .5rem 0 0 0;
+      padding: 0;
     }
 
     .Header-user-container img {
@@ -255,9 +286,13 @@
     }
 
     .Header-user-container {
-      margin:  0 .5rem;
-      padding: .4rem 0 0 0 ;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin: .5rem 0 0 0;
+      padding: 0;
     }
+
 
     .Header-user-container img {
       width: 32px;
@@ -276,7 +311,7 @@
 <header class="Header">
     <div class="Header-content">
       <div class="Header-logo">
-        <h1>Birdstagram</h1>
+        <h1 on:click={navigateHome} rel='prefetch' >Birdstagram</h1>
       </div>
       <form class="Header-content-search">
         <input id="header-input" type="text" placeholder="Buscar">
@@ -290,9 +325,14 @@
         <li><i class="far fa-heart"/></li>
           {$likeCount === 0 ? '' : $likeCount }
         <li>
+          <a
+            aria-current={segment === 'profile' ? 'page' : undefined}
+            rel="prefetch"
+            href="profile">
           <figure class="Header-user-container">
             <img src={user} alt='Alejandro Leyva' />
           </figure>
+        </a>
         </li>
       </ul>
     </div>

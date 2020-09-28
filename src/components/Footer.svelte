@@ -45,9 +45,14 @@
       <li><a href="/">Cuentas destacadas</a></li>
       <li><a href="/">Hashtags</a></li>
       <li><a href="/">Idiomas</a></li>
+      <li>
+        <a href='https://www.freepik.es/vectores/arbol'>
+        Vector de Árbol creado por titusurya - www.freepik.es
+        </a>
+      </li>
     </ul>
     <div>
-      <h2>&copy; INSTAGRAM FROM FACEBOOK</h2>
+      <h2>&copy; BIRDSTAGRAM FROM ALEJANDROLEYVAA</h2>
     </div>
   </div>
 </div>

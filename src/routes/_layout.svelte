@@ -1,3 +1,8 @@
+<script>
+  import Header from '../components/Header.svelte';
+  export let segment;
+</script>
+
 <style>
   .Main {
     display: grid;
@@ -52,6 +57,8 @@
 
 
 </style>
+
+<Header {segment} />
 
 <main class="Main">
   <slot />

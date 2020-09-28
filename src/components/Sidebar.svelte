@@ -1,5 +1,5 @@
 <script>
-  import Profile from './Profile.svelte';
+  import Profile from './UserProfile.svelte';
   import Suggestions from './Suggestions.svelte';
   import Footer from './Footer.svelte';
 
@@ -16,12 +16,6 @@
 
   .Sidebar-container {
     position: fixed;
-  }
-
-  @media screen and (max-width: 1200px) {
-    .Sidebar {
-      display: none;
-    }
   }
 
   @media screen and (max-width: 800px) {

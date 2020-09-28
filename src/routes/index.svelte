@@ -45,23 +45,6 @@
   });
 </script>
 
-<style>
-    :global(body) {
-    background-color: #fafafa;
-    color: rgba(2, 1, 1, 0.7);
-    font-family: "Lato", sans-serif;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
-
-  :global(h1, h2, h3, h4) {
-    margin: 0;
-    padding: 0;
-  }
-</style>
-
-<Header data={data} />
 <Stories {...unsplashBlueBirds} />
 {#if data.user}
   <Sidebar {...data} posts={data.posts} {...unsplashRedBirds} />

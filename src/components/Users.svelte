@@ -24,8 +24,8 @@
     background-clip: content-box, border-box;
     border: double 2px transparent;
     border-radius: 100%;
-    width: 66px;
-    height: 66px;
+    width: 70px;
+    height: 70px;
     margin: 0;
   }
 
