@@ -18,6 +18,20 @@
     position: fixed;
   }
 
+  @media screen and (max-width: 1500px) {
+    .Sidebar {
+      display: block;
+      margin-left: 8rem;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .Sidebar {
+      display: none;
+      margin-left: 11rem;
+    }
+  }
+
   @media screen and (max-width: 800px) {
     .Sidebar {
       display: none;

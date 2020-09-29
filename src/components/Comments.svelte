@@ -154,6 +154,38 @@
     }
   }
 
+  @media screen and (max-width: 800px) {
+    .Comments-create-comment {
+      display: flex;
+      border-top: 1px solid #dbdbdb;
+      padding: 0 20px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .Comments-create-comment {
+      display: flex;
+      border-top: 1px solid #dbdbdb;
+      padding: 0 20px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .Comments-create-comment {
+      display: flex;
+      border-top: 1px solid #dbdbdb;
+      padding: 0 20px;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .Comments-create-comment {
+      display: flex;
+      border-top: 1px solid #dbdbdb;
+      padding: 0 20px;
+    }
+  }
+
 </style>
 
 <div class="Comments">

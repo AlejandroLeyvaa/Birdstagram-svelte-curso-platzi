@@ -13,19 +13,27 @@
   }
 
   @media screen and (max-width: 800px) {
-
+    .TimeLine {
+      width: 100vw;
+    }
   }
 
   @media screen and (max-width: 767px) {
-
+    .TimeLine {
+      width: 100vw;
+    }
   }
 
   @media screen and (max-width: 480px) {
-
+    .TimeLine {
+      width: 100vw;
+    }
   }
 
   @media screen and (max-width: 320px) {
-
+    .TimeLine {
+      width: 100vw;
+    }
   }
 </style>
 

@@ -28,15 +28,15 @@
     display: grid;
     grid-template-columns:   20% 20% 20% 40%;
     grid-template-rows: 55px;
-    grid-template-areas: " . Logo Search Icons";
+    grid-template-areas: " Logo Search Icons";
   }
 
-  .Header-logo {
+  .Header-logo-container {
     margin: auto 0;
     grid-area: Logo;
   }
 
-  .Header-logo h1:hover  {
+  .Header-logo-container h1:hover  {
     cursor: pointer;
   }
 
@@ -107,12 +107,16 @@
       display: grid;
       grid-template-columns:   33.3% 33.3% 33.3%;
       grid-template-rows: 55px;
-      grid-template-areas: " Logo Search Icons";
+      grid-template-areas: " Cam Logo Share";
     }
 
-    .Header-logo {
+    .Header-logo-container {
       grid-area: Logo;
       margin: auto 1rem;
+    }
+
+    .Header-logo-container h1 {
+      font-size: 1rem;
     }
 
     .Header-content-search {
@@ -158,21 +162,26 @@
       display: grid;
       grid-template-columns:   33.3% 33.3% 33.3%;
       grid-template-rows: 55px;
-      grid-template-areas: " Logo Search Icons";
+      grid-template-areas: " Cam Logo Share";
     }
 
-    .Header-logo {
+    .Header-logo-container {
       grid-area: Logo;
       margin: auto 1rem;
     }
 
+    .Header-logo-container h1 {
+      font-size: 1rem;
+    }
+
     .Header-content-search {
+      display: none;
       grid-area: Search;
       margin: auto;
     }
 
     .Header-content-icons {
-      display: flex;
+      display: none;
       margin: auto 0;
       padding: .5rem 0;
       list-style: none;
@@ -208,21 +217,26 @@
       display: grid;
       grid-template-columns:   33.3% 33.3% 33.3%;
       grid-template-rows: 55px;
-      grid-template-areas: " Logo Search Icons";
+      grid-template-areas: " Cam Logo Share";
     }
 
-    .Header-logo {
+    .Header-logo-container {
       grid-area: Logo;
       margin: auto 1rem;
     }
 
+    .Header-logo-container h1 {
+      font-size: 1rem;
+    }
+
     .Header-content-search {
+      display: none;
       grid-area: Search;
       margin: auto;
     }
 
     .Header-content-icons {
-      display: flex;
+      display: none;
       margin: auto 0;
       padding: .5rem 0;
       list-style: none;
@@ -258,21 +272,26 @@
       display: grid;
       grid-template-columns:   33.3% 33.3% 33.3%;
       grid-template-rows: 55px;
-      grid-template-areas: " Logo Search Icons";
+      grid-template-areas: " Cam Logo Share";
     }
 
-    .Header-logo {
+    .Header-logo-container {
       grid-area: Logo;
       margin: auto 1rem;
     }
 
+    .Header-logo-container h1 {
+      font-size: 1rem;
+    }
+
     .Header-content-search {
+      display: none;
       grid-area: Search;
       margin: auto;
     }
 
     .Header-content-icons {
-      display: flex;
+      display: none;
       margin: auto 0;
       padding: .5rem 0;
       list-style: none;
@@ -310,7 +329,7 @@
 
 <header class="Header">
     <div class="Header-content">
-      <div class="Header-logo">
+      <div class="Header-logo-container">
         <h1 on:click={navigateHome} rel='prefetch' >Birdstagram</h1>
       </div>
       <form class="Header-content-search">

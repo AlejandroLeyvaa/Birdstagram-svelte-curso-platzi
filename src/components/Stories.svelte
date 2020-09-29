@@ -34,9 +34,9 @@
     .Stories {
       display: flex;
       grid-area: Stories;
-      border: 1px solid #dbdbdb;
-      border-radius: 3px;
-      width: 615px;
+      border: none;
+      border-radius: 0;
+      width: 100vw;
       height: 120px;
       margin: 0 auto;
       box-sizing: border-box;
@@ -58,15 +58,42 @@
   }
 
   @media screen and (max-width: 767px) {
-
+    .Stories {
+      display: flex;
+      grid-area: Stories;
+      border: none;
+      border-radius: 0;
+      width: 100vw;
+      height: 120px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
   }
 
   @media screen and (max-width: 480px) {
-
+    .Stories {
+      display: flex;
+      grid-area: Stories;
+      border: none;
+      border-radius: 0;
+      width: 100vw;
+      height: 120px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
   }
 
   @media screen and (max-width: 320px) {
-
+    .Stories {
+      display: flex;
+      grid-area: Stories;
+      border: none;
+      border-radius: 0;
+      width: 100vw;
+      height: 120px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
   }
 </style>
 
