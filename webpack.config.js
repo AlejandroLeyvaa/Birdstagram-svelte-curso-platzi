@@ -48,7 +48,6 @@ module.exports = {
       new webpack.DefinePlugin({
         'process.browser': true,
         'process.env.NODE_ENV': JSON.stringify(mode),
-        'process.env.ACCESS_KEY': JSON.stringify(accessKey)
       }),
     ].filter(Boolean),
     devtool: dev && 'inline-source-map'
